@@ -110,7 +110,7 @@ var URLON = {
 				return res;
 			}
 			// Error
-			throw 'Unexpected char ' + type;
+			throw new Error('Could not parse urlon (unexpected char ' + JSON.stringify(type) + ').');
 		}
 
 		return parse();
